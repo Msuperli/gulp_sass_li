@@ -1,0 +1,48 @@
+
+$mainColor:#58bc58;
+$font:20px;
+$tp:top;
+$bot:bottom;
+.box{
+    background-color:$mainColor;
+    h1{
+        font-size:$font;
+        border-#{$tp}:1px solid #ccc;
+        border-#{$bot}:5px solid red;
+        margin:0;padding:0;
+    }
+
+}
+@function getFontSize(){
+    @return 5px;
+}
+@for $i from 1 to 6{
+    h#{$i}{
+        border-#{$bot}:getFontSize() dashed black;
+    }
+}
+
+$pd: 10px 20px 30px 66px;
+h2{font-size:nth($pd,2);}
+
+$num:(h1:1em,h2:2em,h3:3em);
+h4{
+    padding:$pd;
+    font-size:map-get($num,h3);
+    text-align:center;
+}
+
+%bd{
+    font-size:30px;
+    color:yellow;
+}
+h5{
+    @extend %bd;
+    // 父级选择器
+    &:hover{
+        background:skyblue;
+    }
+}
+
+
+

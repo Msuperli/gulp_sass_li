@@ -1,0 +1,50 @@
+.box {
+  background-color: #58bc58;
+}
+
+.box h1 {
+  font-size: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 5px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border-bottom: 5px dashed black;
+}
+
+h2 {
+  border-bottom: 5px dashed black;
+}
+
+h3 {
+  border-bottom: 5px dashed black;
+}
+
+h4 {
+  border-bottom: 5px dashed black;
+}
+
+h5 {
+  border-bottom: 5px dashed black;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h4 {
+  padding: 10px 20px 30px 66px;
+  font-size: 3em;
+  text-align: center;
+}
+
+h5 {
+  font-size: 30px;
+  color: yellow;
+}
+
+h5:hover {
+  background: skyblue;
+}
